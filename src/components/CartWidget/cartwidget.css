@@ -1,0 +1,22 @@
+.widget{
+    display: flex;
+    flex-direction: row;
+}
+.imgCarrito{
+    width: 50px;
+    height: auto;
+}
+.badgeCarrito{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.356);
+    width: 20px;
+    height: 25px;
+    border-radius: 8px;
+    font-size: 15px;    
+    position: relative;
+    transform: translate(-50%, -50%); 
+}
+.nroCarrito{
+    font-weight: bolder;
+    text-align: center;
+}

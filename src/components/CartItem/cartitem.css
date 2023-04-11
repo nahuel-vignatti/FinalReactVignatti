@@ -1,0 +1,17 @@
+.card__item{
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 4px 2px rgba(112,108,112,1);
+}
+.imgProduCart{
+    max-height: 8rem;
+    width: auto;
+}
+
+.imgEliminar{
+    max-width: 40px;
+    height: auto;
+}
+.cajaItem{
+    width: 90%;
+}

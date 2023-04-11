@@ -1,0 +1,15 @@
+.card{
+    border: 2px solid rgb(105, 102, 102);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 18rem;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+.imgLista{
+    max-width: 11rem;
+    height: auto;
+}
