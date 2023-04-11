@@ -7,7 +7,9 @@ function Item({ producto }) {
   return (
     <Col xs={4} className="card gap-2">
       <h5>{producto.name}</h5>
-      <img src={producto.img} alt="" className="imgLista" />
+      <div className="recuadro">
+        <img src={producto.img} alt="" className="imgLista" />
+      </div>
       <div>
         <h6 className="mb-3">Precio: ${producto.price}</h6>
         <NavLink to={`/item/${producto.id}`}>

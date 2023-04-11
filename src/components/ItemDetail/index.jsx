@@ -8,7 +8,7 @@ import { Context } from "../../context";
 function ItemDetail({ producto }) {
   const { onAdd } = useContext(Context);
   const [added, setAdded] = useState(0);
-  
+
   function onAddProduct(cant) {
     setAdded(cant);
     onAdd(producto, cant);
@@ -27,17 +27,20 @@ function ItemDetail({ producto }) {
   return (
     <article>
       <Container className="d-flex flex-row gap-5 ctnTotal">
-        <div className="imgCtn">
+        <Container className="imgCtn">
           <img
             src={producto.img}
             alt="imagen de producto"
             className="imgProdu"
           />
-        </div>
+        </Container>
         <div className="infoProdu">
           <h2>{producto.name}</h2>
           <p>{producto.description}</p>
-          <p><strong>Ubicacion: </strong>{textoDescriptivo}</p>
+          <p>
+            <strong>Ubicacion: </strong>
+            {textoDescriptivo}
+          </p>
           {added == 0 && (
             <ItemCount
               stock={producto.stock}
@@ -45,18 +48,22 @@ function ItemDetail({ producto }) {
               onAdd={onAddProduct}
             />
           )}
-          <div>
-            {added >= 1 && (
-              <div className="ctas-container d-flex flex-column justify-content-center align-items-center gap-2">
-                <NavLink to={"/cart"}>
-                  <Button variant="success" className="btnCompras">Terminar Compra</Button>{" "}
-                </NavLink>
-                <NavLink to={"/"}>
-                  <Button variant="primary" className="btnCompras">Seguir Comprando</Button>{" "}
-                </NavLink>
-              </div>
-            )}
-          </div>
+
+          {added >= 1 && (
+            <div className="ctas-container d-flex flex-column justify-content-center align-items-center gap-2">
+              <NavLink to={"/cart"}>
+                <Button variant="success" className="btnCompras">
+                  Terminar Compra
+                </Button>{" "}
+              </NavLink>
+            </div>
+          )}
+
+          <NavLink to={"/"}>
+            <Button variant="primary" className="btnCompras mt-3">
+              Seguir Comprando
+            </Button>{" "}
+          </NavLink>
         </div>
       </Container>
     </article>

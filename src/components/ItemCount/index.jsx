@@ -30,7 +30,7 @@ function ItemCount({ stock, precio, onAdd }) {
           +
         </Button>{" "}
       </div>
-      <Button variant="primary" onClick={() => onAdd(cant)}>
+      <Button variant="primary" onClick={() => onAdd(cant)} className="btnCompras mb-3">
         Agregar Al carrito
       </Button>{" "}
     </Container>
