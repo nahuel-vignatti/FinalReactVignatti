@@ -25,16 +25,18 @@ function ItemDetail({ producto }) {
     }
   }
   return (
-    <article>
-      <Container className="d-flex flex-row gap-5 ctnTotal">
-        <Container className="imgCtn">
+    
+      <Container className="row gap-5 ctnTotal justify-content-center align-items-center align-items-md-start">
+        <div className="col-6 col-md-5 imgCtn">
+        
           <img
             src={producto.img}
             alt="imagen de producto"
             className="imgProdu"
-          />
-        </Container>
-        <div className="infoProdu">
+          />          
+        
+        </div>
+        <div className="col-11 col-md-6 infoProdu">
           <h2>{producto.name}</h2>
           <p>{producto.description}</p>
           <p>
@@ -66,7 +68,7 @@ function ItemDetail({ producto }) {
           </NavLink>
         </div>
       </Container>
-    </article>
+    
   );
 }
 

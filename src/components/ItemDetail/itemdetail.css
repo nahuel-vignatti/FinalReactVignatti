@@ -1,7 +1,7 @@
 .imgProdu{
     /* max-width: 25rem; */
-    width: auto;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     /* max-height: 30rem;  */
     border-radius: 0.5rem;
     box-shadow: 0px 0px 23px 4px rgba(112,108,112,1);
@@ -26,7 +26,4 @@
 }
 .btnCompras{
     width:12rem;
-}
-.imgCtn{
-   
 }

@@ -36,7 +36,7 @@ function ItemDetailContainer({ itemId }) {
   //   }, [itemId]);
 
   return (
-    <main className="itemDetail">
+    <main className="itemDetail d-flex flex-column align-items-center">
       <ItemDetail producto={producto} />
     </main>
   );
